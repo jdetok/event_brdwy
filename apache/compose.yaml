@@ -15,7 +15,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
-      # - ./static:/usr/local/apache2/htdocs/static
+      - ../static:/usr/local/apache2/htdocs/static
     restart: unless-stopped
 
 networks:
