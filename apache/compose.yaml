@@ -1,0 +1,28 @@
+# docker compose file to run api on localhost:3333
+name: event_brdwy
+services:
+  apache:
+    build:
+      context: ../
+      dockerfile: apache/Dockerfile
+    image: dev-apache-eob
+    container_name: dev-apache-eob
+    ports:
+      - "3333:80"
+    networks:
+      dev-eob-net:
+        ipv4_address: 10.0.222.213
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      # - ./static:/usr/local/apache2/htdocs/static
+    restart: unless-stopped
+
+networks:
+  dev-eob-net:
+    name: dev-eob-net
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.222.0/24
+          gateway: 10.0.222.1
