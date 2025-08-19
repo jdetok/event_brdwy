@@ -1,0 +1,26 @@
+{
+  "name": "event_brdwy",
+  "version": "1.0.0",
+  "description": "- commissioned by owner Theresa Hendrix-Myers July 2025 - repo started August 14, 2025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdetok/event_brdwy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jdetok/event_brdwy/issues"
+  },
+  "homepage": "https://github.com/jdetok/event_brdwy#readme",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
