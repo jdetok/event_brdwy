@@ -6,12 +6,13 @@ a {
 }
 
 body {
-    background-color: #c273f7;
+    background-color: #f1eedee5;
+    /* background-color: #c273f7; */
     /* background-color: #e5daecb7; */
 }
 
 .title {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
